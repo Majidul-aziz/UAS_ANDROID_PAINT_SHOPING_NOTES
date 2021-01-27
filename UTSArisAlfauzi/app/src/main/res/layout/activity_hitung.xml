@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/viewTembok"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/bg_outlineradius"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/bidangTembok"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:text="Bidang Tembok"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/panjangTembok"
+            android:layout_width="83dp"
+            android:layout_height="17dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dp"
+            android:text="Panjang (m)"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/bidangTembok"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bidangTembok" />
+
+        <EditText
+            android:id="@+id/editTextpanjangTembok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ems="3"
+            android:hint="0"
+            android:inputType="numberDecimal"
+            app:layout_constraintStart_toStartOf="@+id/panjangTembok"
+            app:layout_constraintTop_toBottomOf="@+id/panjangTembok" />
+
+        <TextView
+            android:id="@+id/lebarTembok"
+            android:layout_width="65dp"
+            android:layout_height="18dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="2dp"
+            android:text="Lebar (m)"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/panjangTembok"
+            app:layout_constraintStart_toEndOf="@+id/panjangTembok"
+            app:layout_constraintTop_toTopOf="@+id/panjangTembok" />
+
+        <EditText
+            android:id="@+id/editTextlebarTembok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ems="3"
+            android:hint="0"
+            android:inputType="numberDecimal"
+            app:layout_constraintStart_toStartOf="@+id/lebarTembok"
+            app:layout_constraintTop_toBottomOf="@+id/lebarTembok" />
+
+        <TextView
+            android:id="@+id/jumlahTembok"
+            android:layout_width="52dp"
+            android:layout_height="16dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="5dp"
+            android:text="Jumlah"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/lebarTembok"
+            app:layout_constraintStart_toEndOf="@+id/lebarTembok"
+            app:layout_constraintTop_toTopOf="@+id/lebarTembok" />
+
+        <EditText
+            android:id="@+id/editTextjumlahTembok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ems="3"
+            android:hint="0"
+            android:inputType="numberDecimal"
+            app:layout_constraintStart_toStartOf="@+id/jumlahTembok"
+            app:layout_constraintTop_toBottomOf="@+id/jumlahTembok" />
+
+        <TextView
+            android:id="@+id/luasTembok"
+            android:layout_width="75dp"
+            android:layout_height="15dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="15dp"
+            android:text="Luas (m2)"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/jumlahTembok"
+            app:layout_constraintStart_toEndOf="@+id/jumlahTembok"
+            app:layout_constraintTop_toTopOf="@+id/jumlahTembok" />
+
+        <EditText
+            android:id="@+id/editTextluasTembok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ems="3"
+            android:hint="0"
+            android:inputType="numberDecimal"
+            app:layout_constraintStart_toStartOf="@+id/luasTembok"
+            app:layout_constraintTop_toBottomOf="@+id/luasTembok" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/viewPintu"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/bg_outlineradius"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewTembok">
+
+        <TextView
+            android:id="@+id/bidangPintu"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:text="Bidang Pintu"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/panjangPintu"
+            android:layout_width="83dp"
+            android:layout_height="17dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dp"
+            android:text="Panjang (m)"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/bidangPintu"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bidangPintu" />
+
+        <EditText
+            android:id="@+id/editTextpanjangPintu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ems="3"
+            android:hint="0"
+            android:inputType="numberDecimal"
+            app:layout_constraintStart_toStartOf="@+id/panjangPintu"
+            app:layout_constraintTop_toBottomOf="@+id/panjangPintu" />
+
+        <TextView
+            android:id="@+id/lebarPintu"
+            android:layout_width="65dp"
+            android:layout_height="18dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="2dp"
+            android:text="Lebar (m)"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/panjangPintu"
+            app:layout_constraintStart_toEndOf="@+id/panjangPintu"
+            app:layout_constraintTop_toTopOf="@+id/panjangPintu" />
+
+        <EditText
+            android:id="@+id/editTextlebarPintu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ems="3"
+            android:hint="0"
+            android:inputType="numberDecimal"
+            app:layout_constraintStart_toStartOf="@+id/lebarPintu"
+            app:layout_constraintTop_toBottomOf="@+id/lebarPintu" />
+
+        <TextView
+            android:id="@+id/jumlahPintu"
+            android:layout_width="52dp"
+            android:layout_height="16dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="5dp"
+            android:text="Jumlah"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/lebarPintu"
+            app:layout_constraintStart_toEndOf="@+id/lebarPintu"
+            app:layout_constraintTop_toTopOf="@+id/lebarPintu" />
+
+        <EditText
+            android:id="@+id/editTextjumlahPintu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ems="3"
+            android:hint="0"
+            android:inputType="numberDecimal"
+            app:layout_constraintStart_toStartOf="@+id/jumlahPintu"
+            app:layout_constraintTop_toBottomOf="@+id/jumlahPintu" />
+
+        <TextView
+            android:id="@+id/luasPintu"
+            android:layout_width="75dp"
+            android:layout_height="15dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="15dp"
+            android:text="Luas (m2)"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/jumlahPintu"
+            app:layout_constraintStart_toEndOf="@+id/jumlahPintu"
+            app:layout_constraintTop_toTopOf="@+id/jumlahPintu" />
+
+        <EditText
+            android:id="@+id/editTextluaspintu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ems="3"
+            android:hint="0"
+            android:inputType="numberDecimal"
+            app:layout_constraintStart_toStartOf="@+id/luasPintu"
+            app:layout_constraintTop_toBottomOf="@+id/luasPintu" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/viewJendela"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/bg_outlineradius"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewPintu">
+
+        <TextView
+            android:id="@+id/bidangJendela"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:text="Bidang Jendela"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/panjangJendela"
+            android:layout_width="83dp"
+            android:layout_height="17dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dp"
+            android:text="Panjang (m)"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/bidangJendela"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bidangJendela" />
+
+        <EditText
+            android:id="@+id/editTextpanjangjendela"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ems="3"
+            android:hint="0"
+            android:inputType="numberDecimal"
+            app:layout_constraintStart_toStartOf="@+id/panjangJendela"
+            app:layout_constraintTop_toBottomOf="@+id/panjangJendela" />
+
+        <TextView
+            android:id="@+id/lebarjendela"
+            android:layout_width="65dp"
+            android:layout_height="18dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="2dp"
+            android:text="Lebar (m)"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/panjangJendela"
+            app:layout_constraintStart_toEndOf="@+id/panjangJendela"
+            app:layout_constraintTop_toTopOf="@+id/panjangJendela" />
+
+        <EditText
+            android:id="@+id/editTextlebarjendela"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ems="3"
+            android:hint="0"
+            android:inputType="numberDecimal"
+            app:layout_constraintStart_toStartOf="@+id/lebarjendela"
+            app:layout_constraintTop_toBottomOf="@+id/lebarjendela" />
+
+        <TextView
+            android:id="@+id/jumlahjendela"
+            android:layout_width="52dp"
+            android:layout_height="16dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="5dp"
+            android:text="Jumlah"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/lebarjendela"
+            app:layout_constraintStart_toEndOf="@+id/lebarjendela"
+            app:layout_constraintTop_toTopOf="@+id/lebarjendela" />
+
+        <TextView
+            android:id="@+id/luasjendela"
+            android:layout_width="75dp"
+            android:layout_height="15dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="15dp"
+            android:text="Luas (m2)"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/jumlahjendela"
+            app:layout_constraintStart_toEndOf="@+id/jumlahjendela"
+            app:layout_constraintTop_toTopOf="@+id/jumlahjendela" />
+
+        <EditText
+            android:id="@+id/editTextluasjendela"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ems="3"
+            android:hint="0"
+            android:inputType="numberDecimal"
+            app:layout_constraintStart_toStartOf="@+id/luasjendela"
+            app:layout_constraintTop_toBottomOf="@+id/luasjendela" />
+
+        <EditText
+            android:id="@+id/editTextjumlahjendela"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ems="3"
+            android:hint="0"
+            android:inputType="numberDecimal"
+            app:layout_constraintStart_toStartOf="@+id/jumlahjendela"
+            app:layout_constraintTop_toBottomOf="@+id/jumlahjendela" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textareacat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:text="Total area yang di cat"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewJendela" />
+
+    <EditText
+        android:id="@+id/editTextareacat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:ems="3"
+        android:hint="0"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="@+id/textareacat"
+        app:layout_constraintStart_toEndOf="@+id/textareacat"
+        app:layout_constraintTop_toTopOf="@+id/textareacat" />
+
+    <TextView
+        android:id="@+id/textm2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="m2"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextareacat"
+        app:layout_constraintStart_toEndOf="@+id/editTextareacat"
+        app:layout_constraintTop_toTopOf="@+id/editTextareacat" />
+
+    <TextView
+        android:id="@+id/textkebutuhancat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:text="Total kebutuhan cat tembok"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textareacat" />
+
+    <EditText
+        android:id="@+id/editTextkebutuhancat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="3"
+        android:hint="0"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="@+id/textkebutuhancat"
+        app:layout_constraintStart_toEndOf="@+id/textkebutuhancat"
+        app:layout_constraintTop_toTopOf="@+id/textkebutuhancat" />
+    <TextView
+        android:id="@+id/textm22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lt"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextkebutuhancat"
+        app:layout_constraintStart_toEndOf="@+id/editTextkebutuhancat"
+        app:layout_constraintTop_toTopOf="@+id/editTextkebutuhancat" />
+
+    <TextView
+        android:id="@+id/textkebutuhancatdasar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:text="Total kebutuhan cat Dasar"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textkebutuhancat" />
+
+    <EditText
+        android:id="@+id/editTextkebutuhancatdasar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="3"
+        android:hint="0"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="@+id/textkebutuhancatdasar"
+        app:layout_constraintStart_toEndOf="@+id/textkebutuhancatdasar"
+        app:layout_constraintTop_toTopOf="@+id/textkebutuhancatdasar" />
+    <TextView
+        android:id="@+id/textm222"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lt"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextkebutuhancatdasar"
+        app:layout_constraintStart_toEndOf="@+id/editTextkebutuhancatdasar"
+        app:layout_constraintTop_toTopOf="@+id/editTextkebutuhancatdasar" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="#ccc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textkebutuhancatdasar" />
+
+    <Button
+        android:id="@+id/buttonHapus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Hapus"
+        app:layout_constraintEnd_toEndOf="@+id/view2"
+        app:layout_constraintStart_toStartOf="@+id/view2"
+        app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
